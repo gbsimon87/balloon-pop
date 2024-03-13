@@ -1,0 +1,42 @@
+.App {
+  background-color: blue;
+  height: 100vh;
+}
+
+.gameContainer {
+  max-width: 1200px;
+  background-color: white;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.balloon {
+  width: 160px;
+  height: 160px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: calc(0px - 10rem);
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    background-color: green;
+    bottom: calc(0px - 10rem);
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: red;
+    bottom: calc(0px + 90rem);
+  }
+}
